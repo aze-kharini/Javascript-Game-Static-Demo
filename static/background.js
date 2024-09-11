@@ -403,7 +403,7 @@ function load_assets(assets, callback) {
             console.log('audio');
             element.addEventListener('canplaythrough', loaded, false);
         }
-        console.log(asset.url)
+        // console.log(asset.url)
         element.src = asset.url;
     }
 }
