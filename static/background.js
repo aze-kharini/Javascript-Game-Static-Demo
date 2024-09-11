@@ -403,7 +403,7 @@ function load_assets(assets, callback) {
             console.log('audio');
             element.addEventListener('canplaythrough', loaded, false);
         }
-        element.src = "Javascript-Game-Static-Demo/" +asset.url;
+        element.src = "Javascript-Game-Static-Demo" +asset.url;
     }
 }
 
