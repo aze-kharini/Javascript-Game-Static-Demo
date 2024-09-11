@@ -116,10 +116,10 @@ function init() {
     // Loading the assets of the game, after that calling draw
     load_assets([
         // { 'var': playerImage, "url": "../static/"+ 'lancelot' +"__scaled_4x.png" },
-        { 'var': backgroundImage, "url": '/static/Tileset_scaled.png' },
-        { 'var': gawainImage, 'url': '/static/gawain__scaled_4x.png' },
-        { 'var': lancelotImage, 'url': '/static/lancelot__scaled_4x.png' },
-        { 'var': percivalImage, 'url': '/static/percival__scaled_4x.png' },
+        { 'var': backgroundImage, "url": 'static/Tileset_scaled.png' },
+        { 'var': gawainImage, 'url': 'static/gawain__scaled_4x.png' },
+        { 'var': lancelotImage, 'url': 'static/lancelot__scaled_4x.png' },
+        { 'var': percivalImage, 'url': 'static/percival__scaled_4x.png' },
 
     ], draw);
 
@@ -403,7 +403,7 @@ function load_assets(assets, callback) {
             console.log('audio');
             element.addEventListener('canplaythrough', loaded, false);
         }
-        element.src = "Javascript-Game-Static-Demo" +asset.url;
+        element.src = asset.url;
     }
 }
 
