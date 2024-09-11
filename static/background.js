@@ -117,9 +117,9 @@ function init() {
     load_assets([
         // { 'var': playerImage, "url": "../static/"+ 'lancelot' +"__scaled_4x.png" },
         { 'var': backgroundImage, "url": '/static/Tileset_scaled.png' },
-        { 'var': gawainImage, 'url': '../static/gawain__scaled_4x.png' },
-        { 'var': lancelotImage, 'url': '../static/lancelot__scaled_4x.png' },
-        { 'var': percivalImage, 'url': '../static/percival__scaled_4x.png' },
+        { 'var': gawainImage, 'url': '/static/gawain__scaled_4x.png' },
+        { 'var': lancelotImage, 'url': '/static/lancelot__scaled_4x.png' },
+        { 'var': percivalImage, 'url': '/static/percival__scaled_4x.png' },
 
     ], draw);
 
@@ -403,7 +403,7 @@ function load_assets(assets, callback) {
             console.log('audio');
             element.addEventListener('canplaythrough', loaded, false);
         }
-        element.src = asset.url;
+        element.src = "Javascript-Game-Static-Demo/" +asset.url;
     }
 }
 
